@@ -10,7 +10,7 @@ def jogar():
     rodadas = 1
     pontos = 1000
 
-    print("Por favor, escolha um nivel de dificuldade", numero_secreto)
+    print("Por favor, escolha um nivel de dificuldade")
     print("(1) Fácil (2) Médio (3) Difícil")
     dificuldade = int(input("Definir nivel: "))
 
@@ -52,6 +52,8 @@ def jogar():
 
 
     print("Fim do Jogo")
+    if tentativas == tentativas:
+        print("O numero secreto era {}".format(numero_secreto))
 
 if(__name__ == "__main__"):
     jogar()
